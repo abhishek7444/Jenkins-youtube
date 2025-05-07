@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "my-ec2" {
   ami                    = var.ami
-  instance_type          = var.instance_type
+  instance_type          = var.instance-type
   associate_public_ip_address = true
 
   tags = {
